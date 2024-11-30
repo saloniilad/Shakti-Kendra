@@ -107,7 +107,7 @@ body {
 .bkground {
     width: 1350px;
     height: 800px;
-    background-image: url("/photos/bg.jpg");
+    background-image: url("bg.jpg");
     background-size: cover;
     animation: fadeIn 2s ease-in-out;
 }
