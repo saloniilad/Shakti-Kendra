@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adult Section</title>
+    <link rel="stylesheet" href="22.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">SHAKTI KENDRA</div>
+        <div class="buttons">
+            <a href="age.html" class="get-started">Change Age</a>
+            <a href="index.html" class="login">Log out</a>
+        </div>
+        
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Empowerment begins with self-love and knowledge. Embrace your strength, celebrate your beauty, and never stop learning.</h1>
+        <div class="intro">
+            <p id="typingParagraph">Welcome to the Adult Women’s section, your space for inspiration and empowerment. Here, you’ll find resources on career growth, personal development, health, relationships, and financial independence. Whether you’re navigating new challenges or celebrating milestones, we’re here to support you in becoming your best self.</p>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories">
+        <h2>Topics</h2>
+        <div class="category-list">
+            <div class="category-item" onclick="showModal('stressManagement')">
+                <img src="stressed-frustrated-business-woman-work-cartoon-vector-illustration-165552569.webp" alt="Stress">
+                <p>Stress Management</p>
+            </div>
+            <div class="category-item" onclick="showModal('bagEssentials')">
+                <img src="bag.jpg" alt="Things in Bag">
+                <p>Important Things to Keep in Bag</p>
+            </div>
+            <div class="category-item" onclick="showModal('govSchemesMaharashtra')">
+                <img src="smilingWoman.jpg" alt="Scholarship">
+                <p>Goverment Schemes for Women</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal Structure -->
+    <div id="infoModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="categoryTitle">Category Title</h2>
+            <div class="modal-images"></div>
+            <div id="categoryDescription" class="modal-description"></div>
+        </div>
+    </div>
+
+    <!-- Contact Button -->
+    <button class="contact-btn">Emergency Contacts</button>
+
+    <!-- Contact Modal Structure -->
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeContactModal()">&times;</span>
+            <h2>Emergency Helpline Numbers</h2>
+            <ul>
+                <li><strong>Police:</strong> <a href="tel:100">100</a></li>
+                <li><strong>Women Helpline:</strong> <a href="tel:1091">1091</a></li>
+                <li><strong>Domestic Abuse Helpline:</strong> <a href="tel:181">181</a></li>
+                <li><strong>Child Helpline:</strong> <a href="tel:1098">1098</a></li>
+                <li><strong>Emergency Medical Services:</strong> <a href="tel:102">102</a></li>
+            </ul>
+            
+        </div>
+    </div>
+
+    <script src="22.js"></script>
+</body>
+</html>

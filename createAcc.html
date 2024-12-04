@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Your Account</title>
+    <link rel="stylesheet" href="createAcc.css">
+    <link rel="icon" href="website logo.jpg">
+</head>
+<body bgcolor="#EFBCD5">
+    <div class="image">
+        <!-- <img src="flower.jpg" alt=""> -->
+    </div>
+    <div class="main">
+        <div class="title">
+            <h2>Create Your Account</h2>
+        </div>
+        <div class="form">
+            <div class="innerf">
+                <form style="height: 400px;">
+                    <label for="fn">First Name : </label> <br><br>
+                    <input type="text" name="first_name" id="fn" placeholder="Eg. Seema" required> <br><br> 
+                    <label for="ln">Last Name : </label> <br><br>
+                    <input type="text" name="last_name" id="ln" placeholder="Eg. Lad" required> <br><br>
+                    <label for="em">Email :</label> <br><br>
+                    <input type="email" name="email" id="em" placeholder="email" required> <br><br>
+                    <label for="pw">New Password :</label> <br><br>
+                    <input type="password" name="password" required><br><br>
+                    <div class="sub_butt">
+                        <a href="age.html">Submit</a>
+                    </div>
+                </form> <br><br>
+                <p style="text-align: center; margin-top: 20px;">
+                    Already signed up? <a href="login.html" style="color: #8661c1;">Log in here</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <script>
+        
+   
+        
+        function showAlert(message) {
+            alert(message);
+        }
+
+        
+        const urlParams = new URLSearchParams(window.location.search);
+        const errorMessage = urlParams.get('error');
+        if (errorMessage) {
+            showAlert(errorMessage);
+        }
+    
+
+    </script>
+</body>
+</html>

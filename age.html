@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select your age section</title>
+    <link rel="stylesheet" href="agee.css">
+    <style>
+        body {
+    background-color: #EFBCD5;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+label {
+    font-size: 1.2em;
+    color: #333;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+    </style>
+</head>
+<body bgcolor="#EFBCD5">
+    <form id="ageForm">
+        <label for="age">Select your age</label><br><br>
+        <select name="Age" id="age">
+          <option value="teenager">Teenager</option>
+          <option value="adult">Adult</option>
+        </select><br><br>
+        <input type="submit" value="Submit" />
+    </form>
+
+    <script>
+        document.getElementById('ageForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            var ageGroup = document.getElementById('age').value;
+
+            if (ageGroup === 'teenager') {
+                window.location.href = '11.html'; 
+            } else if (ageGroup === 'adult') {
+                window.location.href = '22.html'; // Redirect to adult page
+            }
+        });
+    </script>
+</body>
+</html>

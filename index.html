@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="welcome.css">
+    <link rel="icon" href="logo.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="topBar">
+        <div class="leftHand"></div>
+        <div class="rightHand">
+            <div class="buttons">
+                <a href="login.html">Log In</a>
+            </div>
+            <div class="buttons signIn">
+                <a href="createAcc.html">Sign In</a>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="bkground poppins-regular">
+            <div class="headings">
+                <h1 class="fade-in">Shakti Kendra</h1>
+                <div class="subtitles slide-in">
+                    <p>Welcome to a space dedicated to celebrating, empowering, and supporting women in all aspects of life. Whether you're here for gaining knowledge, tips, or motivation, you are at the right place.</p>
+                </div>
+            </div>
+            <h2 class="fade-in" style="position: absolute; top: 400px; padding: 10px;">Here's What We Have in Hand</h2>
+            <div class="cards">
+                <div class="cards-container">
+                    <div class="card">
+                        <img src="card1.jpg" class="card-img zoom-in">
+                        <p class="card-title">Safety Precautions for Women</p>
+                        <p class="card-info"></p>
+                    </div>
+                </div>
+                <div class="cards-container">
+                    <div class="card">
+                        <img src="card2.jpg" class="card-img zoom-in">
+                        <p class="card-title">Government Schemes for Females</p>
+                        <p class="card-info"></p>
+                    </div>
+                </div>
+                <div class="cards-container">
+                    <div class="card">
+                        <img src="card.jpg" class="card-img zoom-in">
+                        <p class="card-title">Health Tips</p>
+                        <p class="card-info"></p>
+                    </div>
+                </div>
+                <div class="cards-container">
+                    <div class="card">
+                        <img src="card4.jpg" class="card-img zoom-in">
+                        <p class="card-title">Times of Emergencies</p>
+                        <p class="card-info"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Structure -->
+    <div id="infoModal" class="modal fade-in">
+        <div class="modal-content slide-in">
+            <span class="close">&times;</span>
+            <p id="modalText">Some information about the topic...</p>
+            <a href="createAcc.html" class="modal-link">Sign in to learn more</a>
+        </div>
+    </div>
+
+    <script src="welcome.js"></script>
+</body>
+</html>

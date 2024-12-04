@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teenage Section</title>
+    <link rel="stylesheet" href="11.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">SHAKTI KENDRA</div>
+        <div class="buttons">
+            <a href="age.html" class="get-started">Change Age</a>
+            <a href="index.html" class="login">Log out</a>
+        </div>
+        
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>You are more powerful than you know; <br> you are beautiful just as you are.</h1>
+        <div class="intro">
+            <p id="typingParagraph">Welcome to the Teenage Girls' section—a supportive space for young girls navigating the exciting and sometimes challenging teenage years. Here, you'll find articles, resources, and advice on everything from self-confidence and mental wellness to friendships and academic success. This is your place to explore, grow, and celebrate who you are and who you're becoming!</p>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories">
+        <h2>Topics</h2>
+        <div class="category-list">
+            <div class="category-item" onclick="showModal('MentrualCycle')">
+                <img src="menstrualCycle.jpg" alt="Menstrual Cycle">
+                <p>Menstrual Cycle</p>
+            </div>
+            <div class="category-item" onclick="showModal('knowYorBody')">
+                <img src="knowYorBody.png" alt="Know Your Body">
+                <p>Know Your Body</p>
+            </div>
+            <div class="category-item" onclick="showModal('scholarship')">
+                <img src="Scholarship.png" alt="Scholarship">
+                <p>Scholarship For Girls</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal Structure -->
+    <div id="infoModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="categoryTitle">Category Title</h2>
+            <div class="modal-images"></div>
+            <div id="categoryDescription" class="modal-description"></div>
+        </div>
+    </div>
+
+    <!-- Contact Button -->
+    <button class="contact-btn">Emergency Contacts</button>
+
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeContactModal()">&times;</span>
+            <h2>Emergency Helpline Numbers</h2>
+            <ul>
+                <li><strong>Police:</strong> <a href="tel:100">100</a></li>
+                <li><strong>Women Helpline:</strong> <a href="tel:1091">1091</a></li>
+                <li><strong>Domestic Abuse Helpline:</strong> <a href="tel:181">181</a></li>
+                <li><strong>Child Helpline:</strong> <a href="tel:1098">1098</a></li>
+                <li><strong>Emergency Medical Services:</strong> <a href="tel:102">102</a></li>
+            </ul>
+            
+        </div>
+    </div>
+    <script src="11.js"></script>
+</body>
+</html>
